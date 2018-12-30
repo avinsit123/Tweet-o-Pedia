@@ -55,7 +55,7 @@ Quit the server with CONTROL-C.
  Cut and paste http://127.0.0.1:8000/ on any browser of your choice or click on the link in the terminal.A WebPage of the following figure will be loaded:
  
  
- ![Optional Text](../master/screenomatic.png)
+ ![Optional Text](../master/Photos/screenomatic.png)
  
  <hr>
 
