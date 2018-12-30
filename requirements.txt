@@ -180,7 +180,6 @@ PyAudio==0.2.11
 pycodestyle==2.4.0
 pycosat==0.6.3
 pycparser==2.18
-pycrypto==2.6.1
 pycurl==7.43.0.2
 pydot==1.2.4
 pyflakes==2.0.0
@@ -213,7 +212,7 @@ regex==2018.1.10
 requests==2.19.1
 requests-oauthlib==1.0.0
 requests-toolbelt==0.8.0
-rope==0.10.7
+rope>=0.11.0
 ruamel-yaml==0.15.46
 scikit-image==0.14.0
 scikit-learn==0.19.1
