@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Trump Tweets</title>
+</head>
+<body>
+ <div id="content-container" class="container p-none">
+        <div class="lgn-container col-lg-8">
+            <form id="login-form" method="post"
+                  action="{% url 'vahmc' %}">
+                {% csrf_token %}
+                <table class="table">
+                    <tr>
+                        <td><label for="Starting_Phrases">Enter the Starting Phrases</label></td>
+                        <td><textarea id="Starting_Phrases" name="start_phrase"
+                                       class="form-control"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td><label for="No.of Words">Enter the no.of characters in a tweet</label></td>
+                        <td><input id="No.of Words" name="now"
+                                   type="number"  step="1" class="form-control"></td>
+                    </tr>
+                </table>
+                {% if form.errors %}
+                    <p class=" label label-danger">
+                        Your username and password didn't match.
+                        Please try again.
+                    </p>
+                {% endif %}
+
+                <input type="submit" value="Generate"
+                       class="btn btn-primary pull-right" />
+                <input type="hidden" name="next" value="{{ next }}" />
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

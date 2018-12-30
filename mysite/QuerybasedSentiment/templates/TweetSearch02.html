@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+       {% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'hellobye.css' %}">
+    <title>Some of the recent tweets displayed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+</head>
+<body>
+
+<div class="container align-items-center"  >
+    <div class="row align-items-center" >
+    <div class="col-lg-4">
+      <div class="card-counter  primary" >
+        <i class="fa fa-twitter"></i>
+        <span class="count-numbers">{{avg_sentiment}}%</span>
+        <span class="count-name">{{Query}}</span>
+      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<table class="table table-striped table-dark">
+  <thead>
+    <tr>
+      <th scope="col">Range</th>
+      <th scope="col">Percentage of Sentiment</th>
+      <th scope="col">Query</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for port in table %}
+    <tr>
+      <th scope="row">{{port.range}}</th>
+      <td>{{port.count}}%</td>
+      <td>{{Query}}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+</body>
+</html>

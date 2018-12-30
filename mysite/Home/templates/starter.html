@@ -1,0 +1,93 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<link href="css/animate.css" rel="stylesheet">
+         {% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'huhu.css' %}">
+        <title>Home || </title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8">
+						<div class="header-left">
+
+						</div>
+						<div class="top-title">
+							<h1 class="animated infinite bounceInDown">Tweet-O-Pedia</h1>
+							<h7 class="logo-title animated pulse">Your one stop destination to search for tweets,view ongoing twitter trends,guage public sentiment,identify hate speech and tweet just like famous world leaders</h7>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="menu">
+                            <li class="f-item-4"><a href="{% url 'Objective' %}">Our Objective</a></li>
+							<li class="f-item-1"><a href="{% url 'Tweetform' %}">Tweet Generator</a></li>
+						   <li class="f-item-2"><a href="{% url 'Asd' %}">Tweet Search</a></li>
+							<li class="f-item-3"><a href="{% url 'qbs' %}">Sentiment Finder</a></li>
+							<li class="f-item-4"><a href="{% url 'hate' %}">Hate Finder</a></li>
+							<li class="f-item-2"><a href="{% url 'Trends' %}">Trends</a></li>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+		<script>
+			$(document).ready(function(){
+				$( ".f-item-1" ).hover(function() {
+					$('.menu').css("background-color", "#8165a6");
+					}, function(){
+					$('.menu').css("background-color", "#d83f87");
+					});
+				// f-item-2
+				$( ".f-item-2" ).hover(function() {
+					$('.menu').css("background-color", "#735ed5");
+					}, function(){
+					$('.menu').css("background-color", "#d83f87");
+					});
+				// f-item-3
+				$( ".f-item-3" ).hover(function() {
+					$('.menu').css("background-color", "#797b7b");
+					}, function(){
+					$('.menu').css("background-color", "#d83f87");
+				});
+				// f-item-4
+				$( ".f-item-4" ).hover(function() {
+					$('.menu').css("background-color", "#1ea2e0");
+					}, function(){
+					$('.menu').css("background-color", "#d83f87");
+				});
+				// f-item-5
+				$( ".f-item-5" ).hover(function() {
+					$('.menu').css("background-color", "#4a90e2");
+					}, function(){
+					$('.menu').css("background-color", "#d83f87");
+				});
+			});
+		</script>
+		<script>
+		$(window).scroll(function() {
+		var scroll = $(window).scrollTop();
+		if (scroll >=50) {
+		$(".header").addClass("myheader");
+		} else {
+		$(".header").removeClass("myheader");
+		}
+			});
+		</script>
+	</body>
+<footer></footer>
+</html>

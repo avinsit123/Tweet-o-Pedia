@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+       {% load staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'hahasame.css' %}">
+    <title>Some of the recent tweets displayed</title>
+</head>
+<body>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+
+<div class="container">
+    <div class="row">
+{% for trend in trends %}
+
+    <div class="col-md-3">
+
+      <div class="card-counter primary">
+        <i class="fa fa-twitter"></i>
+         <span class="count-name">{{ trend.Hashtag}}</span>
+        <span class="count-numbers">{{ trend.volume}}</span>
+
+      </div>
+
+    </div>
+ {% endfor %}
+
+
+  </div>
+</div>
+</body>
+</html>
