@@ -58,5 +58,21 @@ Quit the server with CONTROL-C.
  ![Optional Text](../master/Photos/screenomatic.png)
  
  <hr>
-
-In order to know more about each of the functionalities goto the above link ()
+  
+  
+  ## To check whether all windows are working
+  
+  After Clicking on Tweet Generator the following Window would open.
+  ![Optional Text](../master/Photos/pc6.png)
+  
+  After Clicking on Twitter trends the following Window would open
+   ![Optional Text](../master/Photos/pc4.png)
+   
+  After clicking on Sentiment Search,the following would open
+   ![Optional Text](../master/Photos/pc5.png)
+   
+  Enter your query and click Search a window of the following type would occur.
+   ![Optional Text](../master/Photos/pic3.png)
+  
+   
+  
