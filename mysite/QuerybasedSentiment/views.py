@@ -191,11 +191,9 @@ def Query_tweets(api,query):
                 min_font_size = 10).generate(cloud)
     print(type(wordcloud))
 
-
-    wordcloud.to_file(query +".jpg")
+    wordcloud.to_file("QuerybasedSentiment/static/wordcloud.jpg")
     hyperlink = query+".jpg"
-    photo = cv2.imread(query + ".jpg")
-    print(photo)
+
     return round(tot_sentiment * 2,2),range_list,hyperlink
 
 # Create your views here.

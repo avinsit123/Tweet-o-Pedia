@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'Objective',
     'TwitterTrends',
     'QuerybasedSentiment',
+    'hate_o_meter',
     'RecentTweetSentiment',
     'django.contrib.admin',
     'django.contrib.auth',
