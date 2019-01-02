@@ -133,7 +133,7 @@ class CharRNN(nn.Module):
 
 
 def LoadModel():
-    with open('/Users/r17935avinash/Desktop/Trump_Tweet_Analysis/mysite/Tweet_Generator/rnn_final.net', 'rb') as f:
+    with open('/Users/r17935avinash/Desktop/Tweet-o-pedia/mysite/Tweet_Generator/rnn_final.net', 'rb') as f:
         checkpoint = torch.load(f,map_location='cpu')
 
     loaded = CharRNN(checkpoint['tokens'], n_hidden=checkpoint['n_hidden'], n_layers=checkpoint['n_layers'])

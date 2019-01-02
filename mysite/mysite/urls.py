@@ -25,6 +25,7 @@ urlpatterns = [
     path('Recent_Tweets/', include('RecentTweetSentiment.urls')),
     path('Objective/', include('Objective.urls')),
     path('QuerybasedSentiment/', include('QuerybasedSentiment.urls')),
-    path('Trends/',include("TwitterTrends.urls"))
+    path('Trends/',include("TwitterTrends.urls")),
+    path('hate_o_meter/',include("hate_o_meter.urls"))
 
 ]

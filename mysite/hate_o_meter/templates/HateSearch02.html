@@ -12,12 +12,12 @@
     <title>Some of the recent tweets displayed</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
 </head>
-<body bgcolor="#E6E6FA">
+<body bg-color="#27AE60">
 
 <div class="container align-items-center"  >
     <div class="row align-items-center" >
     <div class="col-lg-4">
-      <div class="card-counter  primary" >
+      <div class="card-counter  danger" >
         <i class="fa fa-twitter"></i>
         <span class="count-numbers">{{avg_sentiment}}%</span>
         <span class="count-name">{{Query}}</span>
@@ -46,6 +46,9 @@
     {% endfor %}
   </tbody>
 </table>
+<br><br><hr>
+<div style="display:table-cell; vertical-align:middle; text-align:center">
 <img src="{% static 'wordcloud.jpg' %}" align="center" height=100% width=80% alt="Asd" />
+</div>
 </body>
 </html>
