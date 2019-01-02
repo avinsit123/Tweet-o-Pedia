@@ -73,6 +73,12 @@ Quit the server with CONTROL-C.
    
   Enter your query and click Search a window of the following type would occur.
    ![Optional Text](../master/Photos/pic3.png)
+   
+  After clicking on Hate Finder ,the following would open
+   ![Optional Text](../master/Photos/pic3.png)
+   
+  The percentage of hate would be displayed as :
+    ![Optional Text](../master/Photos/pic3.png)
   
    
   
