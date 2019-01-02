@@ -9,7 +9,9 @@ Social Media has become an integrable part of our lives.It is a storehouse of pu
     <li>Have a look at some of the trending hashtags worldwide.</li>
     <li>Measure the hate-o-meter to guage hate towards certain groups or topics.Also report to the Authorities any highly offensive tweet that you might find out.</li></ul>
 Hope you like it and enjoy it.
-  
+
+#### *In order to optimize the Machine Learning Models that I have used please visit* <a href="https://github.com/avinsit123/Tweetopedia_Collab_Notebooks"> *this notebook* </a> *and follow the instructions given in the readme*
+
 ## Running the project on your local system
 
 ### Installing the requirements
