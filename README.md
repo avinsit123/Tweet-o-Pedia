@@ -12,7 +12,7 @@ Hope you like it and enjoy it.
 
 #### *In order to optimize the Machine Learning Models that I have used please visit* <a href="https://github.com/avinsit123/Tweetopedia_Collab_Notebooks"> *this notebook* </a> *and follow the instructions given in the readme*
 
-### I have also included a few goodies for fans of data analysis.Please visit this <a href ="https://github.com/avinsit123/Tweet-o-Pedia/tree/master/mysite"> README </a> to know more*
+### I have also included a few goodies for fans of data analysis.Please visit this* <a href ="https://github.com/avinsit123/Tweet-o-Pedia/tree/master/mysite"> README </a> *to know more*
 
 ## Running the project on your local system
 
