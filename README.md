@@ -79,10 +79,13 @@ Quit the server with CONTROL-C.
    ![Optional Text](../master/Photos/pic3.png)
    
   After clicking on Hate Finder ,the following would open
-   ![Optional Text](../master/Photos/pic3.png)
+   ![Optional Text](../master/Photos/pc7.png)
    
   The percentage of hate would be displayed as :
-    ![Optional Text](../master/Photos/pic3.png)
+    ![Optional Text](../master/Photos/pc9.png)
+    
+  Because I have used a strict criteria of Evaluation the hate percentage is lower . You can modify the notebooks to change the criteria.
+  
   
    
   
