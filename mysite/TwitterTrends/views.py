@@ -29,8 +29,8 @@ class Trend:
 def Trends(request):
     trend_list = []
     
-    for trendi in api.trends_place(2442047):
-         for trends in trendi['trends']:
+    for niggas in api.trends_place(2442047):
+         for trends in niggas['trends']:
              trend = Trend()
              trend.Hashtag,trend.url,trend.volume = trends['name'] ,trends['url'],trends['tweet_volume'] 
              print(trend.Hashtag,trend.url,trend.volume)
