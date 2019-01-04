@@ -20,7 +20,7 @@ Hope you like it and enjoy it.
 The project is built using Django framework so you must have Python installed on your local system and also preferably Anaconda Distribution.Follow the steps given below to set up the project on your local system
 
 ```terminal
-$git clone 
+$git clone https://github.com/avinsit123/Tweet-o-Pedia.git
 $cd Tweet-o-Pedia 
 $pip install -r requirements.txt 
 ```
