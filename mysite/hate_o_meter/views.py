@@ -141,7 +141,7 @@ def goloader(tweet):
    model = LSTMClassifier(hidden_dim=100, batch_size=BATCH_SIZE, embedding_size=EMBEDDING_DIM,
                        num_layers=4, dropout=0, verbose=True)
    
-   with open('/Users/r17935avinash/Downloads/hateme.pth', 'rb') as f:
+   with open('hateme.pth', 'rb') as f:
        checkpoint = torch.load(f,map_location='cpu')
 
    model.load_state_dict(checkpoint['state_dict'])

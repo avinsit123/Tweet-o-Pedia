@@ -60,7 +60,7 @@ def goloader(tweet):
    DROPOUT = 0.5 
 
    model = CNN(INPUT_DIM, EMBEDDING_DIM, N_FILTERS, FILTER_SIZES, OUTPUT_DIM, DROPOUT)
-   with open('/Users/r17935avinash/Downloads/hateorlove.pth', 'rb') as f:
+   with open('hateorlove.pth', 'rb') as f:
        checkpoint = torch.load(f,map_location='cpu')
 
    model.load_state_dict(checkpoint['state_dict'])
@@ -201,13 +201,9 @@ def Rendersearch1(request):
     return render(request , 'TweetSearch01.html')
 
 def Rendersearchresult1(request):
-    #return render(request , 'TweetSearch.html')
-    #return HttpResponse(Query_tweets(api,request.POST["Query"]))
-    #tweetcolls = Query_tweets(api,request.POST["Query"])
     avg_sentiment , range_table , hyperlink = Query_tweets(api,request.POST["Query"])
     return render(request,'TweetSearch02.html',{ "Query": request.POST["Query"] , "avg_sentiment":avg_sentiment , "table" : range_table ,"hyperlink" : hyperlink})
 
-    #return  HttpResponse(Query_tweets(api,request.POST["Query"]))
 
 if __name__ == "__main__":
     Query_tweets(api,"Mueller Investigation")
