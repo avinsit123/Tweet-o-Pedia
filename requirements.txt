@@ -51,7 +51,7 @@ datashape==0.5.4
 decorator==4.3.0
 descartes==1.1.0
 dill==0.2.8.2
-distributed==1.22.0
+distributed==2021.10.0
 Django==2.2.24
 dlib==19.15.0
 docopt==0.6.2
